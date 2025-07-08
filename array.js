@@ -54,3 +54,17 @@ const studentlist = [
 ];
 console.log("강경님의 MBTI:", studentlist[0].mbti);
 console.log("마지막 학생 이름:", studentlist[studentlist.length - 1].myname);
+console.log("김광님이 제일 좋아하는 음식:", studentlist[1].food[0]);
+
+// 퀴즈
+const introduce = (name, age) => {
+  return "안녕하세요, " + name + "님. 당신의 나이는 " + age + "세입니다.";
+};
+
+console.log(introduce("김철수", "25"));
+
+const minus = (a, b) => {
+  return a - b;
+};
+
+console.log(minus(60, 20)); // 예상 결과: 40
