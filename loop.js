@@ -49,3 +49,16 @@ ingredients.forEach((item) => {
   sandwich += item;
 });
 console.log("완성된 샌드위치:", sandwich);
+
+// 관리자 페이지 접근 허가 (로그인되어 있어야 하고, 관리자 역할이어야 함)
+
+const user = {
+  isLoggedIn: true,
+  role: "admin",
+};
+// isloggedin 자체가 ture,false 이므로 OK
+if (user.isLoggedIn && user.role === "admin") {
+  console.log("관리자 페이지에 접근 가능");
+} else {
+  console.log("관리자 페이지 접근 불가");
+}
