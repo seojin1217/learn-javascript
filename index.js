@@ -78,5 +78,10 @@ const pluss = () => {
 };
 pluss();
 
-const upperstring = (myname) => myname.toUpperCase();
+// const upperstring = (myname) => myname.toUpperCase();
+
+const upperstring = (myname) => {
+  return myname.toUpperCase();
+};
+
 console.log("upperstring:", upperstring("seojin"));

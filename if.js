@@ -1,6 +1,6 @@
 // if 조건문 : score 값이 60점 이상이면 pass 합격통지. if () {} 무조건 true, false 둘 중 하나로 나와야 조건식이 사용 가능함
 
-const score = 80;
+const score = 92;
 const pass = () => {
   console.log("합격!");
 };
@@ -30,3 +30,11 @@ if (score >= 90) {
 } else {
   console.log("D등급");
 }
+
+// `` <- 백틱(물결표 아래 있는것) : 특별한 따옴표!! 문자열과 변수를 한 문장으로 연결
+
+console.log("점수는", score, "점입니다");
+console.log(`점수는 $(score)점 입니다`);
+
+// 삼항 연산자(항이 3개) : 조건? value1(true일 경우 실행) : value2(false인 경우 실행)
+score >= 60 ? pass() : fail();
