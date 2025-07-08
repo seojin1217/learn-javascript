@@ -55,3 +55,28 @@ const userinfo = () => {
   console.log("🎁 나의 이름:", myname, "/ 나의 나이:", age);
 };
 userinfo();
+
+const userinform = () => {
+  console.log(myname + "님! 반갑습니다~");
+  console.log(age + "세 이시네요!");
+  console.log("더블:" + age * 2);
+  console.log("더블:", age * 2);
+};
+userinform();
+
+const one = 23;
+const two = 45;
+const plus = () => {
+  console.log(one + " 더하기 " + two + "는");
+  console.log(one + two + " 입니다");
+};
+plus();
+
+const sum = one + two;
+const pluss = () => {
+  console.log(one + " 더하기 " + two + "는 " + sum + " 입니다");
+};
+pluss();
+
+const upperstring = (myname) => myname.toUpperCase();
+console.log("upperstring:", upperstring("seojin"));
