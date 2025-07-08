@@ -34,3 +34,18 @@ const studentlist = [
 for (let i = 0; i < studentlist.length; i++) {
   console.log(studentlist[i].myname, "님의 mbti:", studentlist[i].mbti);
 }
+
+// forEach 문
+const numbers = [2, 5, 7, 9, 4];
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log("i값:", numbers[i]);
+}
+
+const ingredients = ["🥕", "🥝", "🥑", "🧀", "🥩"];
+let sandwich = "🥪";
+ingredients.forEach((item) => {
+  console.log("item:", item);
+  sandwich += item;
+});
+console.log("완성된 샌드위치:", sandwich);
